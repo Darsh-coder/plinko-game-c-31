@@ -51,9 +51,9 @@ function setup() {
 
 function draw() {
   if(frameCount % 60 === 0){
-    particle = new Particle(random(120, 500), 0, 7, random(0, 360));
-   
-  
+    particle = new Particle(random(120, 500),0,10);
+   particles.push(particle)
+  }
 
   background("black");
   Engine.update(engine, 25);
@@ -88,4 +88,4 @@ ground.display();
 
   
 }
-}
+
